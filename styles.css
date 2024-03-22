@@ -1,13 +1,10 @@
 @font-face {
-  font-family: 'Remnant';
+  font-family: 'Remnant Regular';
   src: url('https://github.com/bonkmachine/Idontknow/raw/main/Remnant-Regular.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 }
 
-body {
-  font-family: 'Remnant', sans-serif;
-}
 
 body {
   margin: 1%;
@@ -17,7 +14,7 @@ body {
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
-  font-family: 'Remnant', sans-serif;  
+  font-family: 'Remnant Regular', sans-serif;  
   color: black;
   text-align: center;
 }
@@ -69,7 +66,7 @@ body {
 
 #uploadButton,
 #saveButton {
-  font-family: 'Remnant', sans-serif; 
+  font-family: 'Remnant Regular', sans-serif; 
   margin: 16px;
   cursor: pointer;
   color: #ffff;
@@ -139,7 +136,7 @@ body {
 }
 
 h1 {
-  font-family: 'Remnant', sans-serif; 
+  font-family: 'Remnant Regular', sans-serif; 
   font-size: 3rem;
   font-weight: 500;
   font-style: normal;
@@ -156,7 +153,7 @@ h1 a {
 }
 
 h2 {
-  font-family: 'Remnant', sans-serif; 
+  font-family: 'Remnant Regular', sans-serif; 
   font-size: 14px;
   color: #8f8f8f;
   font-weight: normal;
