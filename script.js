@@ -187,7 +187,7 @@ const saveCanvasAsImage = () => {
   });
   const a = document.createElement("a");
   a.href = dataURL;
-  a.download = "I_HAVE_VISION.png";
+  a.download = "i_dont_know_bro.png";
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
