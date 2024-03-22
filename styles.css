@@ -1,0 +1,214 @@
+@font-face {
+  font-family: 'Remnant';
+  src: url('https://github.com/bonkmachine/Idontknow/raw/main/Remnant-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Remnant', sans-serif;
+}
+
+body {
+  margin: 1%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Remnant', sans-serif;  
+  color: black;
+  text-align: center;
+}
+
+#visionselector {
+  margin-bottom: 12px;
+}
+
+#mustacheType {
+  margin-left: 8px;
+  padding: 1px 4px;
+}
+
+#container-wrapper {
+  position: relative;
+}
+
+#canvas-container {
+  position: relative;
+  background-color: transparent;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#prevMustache,
+#resetMustache,
+#nextMustache {
+  background-color: #8f8f8f;
+  color: #FFF;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+#prevMustache:hover,
+#resetMustache:hover,
+#nextMustache:hover {
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#uploadButton,
+#saveButton {
+  font-family: 'Inter Tight', sans-serif; 
+  margin: 16px;
+  cursor: pointer;
+  color: #ffff;
+  background: linear-gradient(90deg, #000, #000);
+  border: none;
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+#uploadButton:hover,
+#saveButton:hover {
+  background: linear-gradient(90deg, #9945FF, #14F195);
+  color: white;
+}
+
+#saveButton {
+  display: none;
+}
+
+#closeButton {
+  opacity: 0.5;
+  cursor: pointer;
+  font-size: 18px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  color: #ffff;
+  background: linear-gradient(90deg, #9945FF, #14F195);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#closeButton:hover {
+  opacity: 1;
+}
+
+
+.background {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle, #e5e7eb 1px, transparent 1px);
+  background-size: 16px 16px;
+  mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 70%, transparent 100%);
+}
+
+.footer {
+  position: relative;
+  margin-top: 60px;
+  font-size: 12px;
+  bottom: 2%;
+  left: 0;
+  width: 100%;
+  color: #8f8f8f;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Inter Tight', sans-serif; 
+  font-size: 3rem;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 0rem;
+}
+
+h1 a {
+  background: linear-gradient(90deg, #9945FF, #14F195);
+  /* Adjust the angle (here, 90deg for a horizontal gradient) based on your preference */
+  background-clip: text;
+  color: transparent; /* Make the text color transparent */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+h2 {
+  font-family: 'Inter', sans-serif; 
+  font-size: 14px;
+  color: #8f8f8f;
+  font-weight: normal;
+  margin-bottom: 12px;
+}
+
+.footer a {
+  color: #8f8f8f;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer a:hover,
+h1 a:hover {
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  #container-wrapper {
+    width: 100%;
+  }
+  #canvas-container {
+    width: 100%;
+    max-width: 350px;
+    max-height: 350px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .konvajs-content {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    position: relative;
+    user-select: none;
+  }
+  .konvajs-content canvas {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+
+  .footer {
+    font-size: 10px;
+  }
+}
